@@ -6,12 +6,13 @@
         <field name="name">Courses</field>
         <field name="res_model">openacademy.course</field>
         <field name="view_mode">tree,form</field>
+        <field name="context">{"search_default_responsible_id":1}</field>
     </record>
 
     <record id="action_window_session" model="ir.actions.act_window">
         <field name="name">Sessions</field>
         <field name="res_model">openacademy.session</field>
-        <field name="view_mode">tree,form</field>
+        <field name="view_mode">tree,form,calendar,graph</field>
     </record>
 
     <!-- TOP MENU ITEM -->
