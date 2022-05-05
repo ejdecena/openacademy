@@ -12,13 +12,16 @@
                             <field name="name" />
                             <field name="start_date" />
                             <field name="duration" />
+                            <field name="number_seats" />
                         </group>
                         <group>
-                            <field name="number_seats" />
+                            <field name="taken_seats" />
+                            <field name="perc_taken_seats" widget="progressbar" />
                             <field name="instructor_id" />
                             <field name="course_id" />
                         </group>
                     </group>
+                    <field name="attendee_ids" />
                 </sheet>
             </form>
         </field>
@@ -33,8 +36,11 @@
                 <field name="start_date" />
                 <field name="duration" />
                 <field name="number_seats" />
+                <field name="taken_seats" />
+                <field name="perc_taken_seats" widget="progressbar" />
                 <field name="instructor_id" />
                 <field name="course_id" />
+                <field name="attendee_ids" />
             </tree>
         </field>
     </record>

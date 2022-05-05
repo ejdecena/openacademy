@@ -27,4 +27,5 @@
         name="Sessions"
         parent="menu_root"
         action="action_window_session"/>
+
 </odoo>

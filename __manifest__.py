@@ -11,9 +11,10 @@
     "data": [
         "views/openacademy_menu.xml",
         "views/openacademy_course_views.xml",
-        "views/openacademy_session_views.xml"
+        "views/openacademy_session_views.xml",
+        "views/res_partner_views.xml",
     ],
     "demo": [
-        "demo/openacademy_course_demo.xml"
+        "demo/openacademy_course_demo.xml",
     ],
 }
