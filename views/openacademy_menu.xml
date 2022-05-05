@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- ACTIONS OPENING VIEWS ON MODELS -->
+    <record id="action_window_course" model="ir.actions.act_window">
+        <field name="name">Courses</field>
+        <field name="res_model">openacademy.course</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <record id="action_window_session" model="ir.actions.act_window">
+        <field name="name">Sessions</field>
+        <field name="res_model">openacademy.session</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <!-- TOP MENU ITEM -->
+    <menuitem id="menu_root" name="Open Academy"/>
+
+    <!-- SUB MENUS -->
+    <menuitem id="menu_course"
+        name="Courses"
+        parent="menu_root"
+        action="action_window_course"/>
+
+    <menuitem id="menu_session"
+        name="Sessions"
+        parent="menu_root"
+        action="action_window_session"/>
+</odoo>

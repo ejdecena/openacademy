@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="course_0" model="openacademy.course">
+        <field name="name">Mathematics</field>
+        <field name="description">Description of Mathematics.</field>
+    </record>
+
+    <record id="course_1" model="openacademy.course">
+        <field name="name">History</field>
+        <field name="description">Description of History.</field>
+    </record>
+
+    <record id="course_2" model="openacademy.course">
+        <field name="name">Geography</field>
+        <field name="description">Description of Geography.</field>
+    </record>
+
+    <record id="course_3" model="openacademy.course">
+        <field name="name">Biology</field>
+        <field name="description">Description of Biology.</field>
+    </record>
+
+    <record id="course_4" model="openacademy.course">
+        <field name="name">Statistics</field>
+        <field name="description">Description of Statistics.</field>
+    </record>
+
+</odoo>
