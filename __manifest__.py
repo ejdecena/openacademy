@@ -9,6 +9,8 @@
     "license": "LGPL-3",
     "depends": ["base"],
     "data": [
+        "security/openacademy_security.xml",
+        "security/ir.model.access.csv",
         "views/openacademy_menu.xml",
         "views/openacademy_course_views.xml",
         "views/openacademy_session_views.xml",
