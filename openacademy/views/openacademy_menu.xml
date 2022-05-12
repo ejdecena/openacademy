@@ -15,6 +15,14 @@
         <field name="view_mode">tree,form,calendar,graph</field>
     </record>
 
+    <record id="action_launch_wizard" model="ir.actions.act_window">
+        <field name="name">Sessions Wizard</field>
+        <field name="res_model">openacademy.wizard</field>
+        <field name="view_mode">form</field>
+        <field name="target">new</field>
+        <field name="binding_model_id" ref="model_openacademy_session"/>
+    </record>
+
     <!-- TOP MENU ITEM -->
     <menuitem id="menu_root" name="Open Academy"/>
 
@@ -26,7 +34,17 @@
 
     <menuitem id="menu_session"
         name="Sessions"
-        parent="menu_root"
+        parent="menu_root"/>
+
+    <menuitem id="sub_menu_session"
+        name="Sessions"
+        parent="menu_session"
         action="action_window_session"/>
+
+    <menuitem id="menu_wizard"
+        name="Sessions Wizard"
+        parent="menu_session"
+        action="action_launch_wizard"
+        sequence="100"/>
 
 </odoo>
