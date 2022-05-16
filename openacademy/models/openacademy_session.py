@@ -1,6 +1,7 @@
 from odoo import models, fields, api
 from odoo.exceptions import ValidationError
 
+
 class Session(models.Model):
     _name = "openacademy.session"
     _description = "This is the description of Session model."
