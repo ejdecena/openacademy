@@ -3,7 +3,7 @@ from odoo import models, fields
 
 class Course(models.Model):
     _name = "openacademy.course"
-    _description = "This is the description of course model."
+    _description = "Course"
 
     name = fields.Char("Title", required=True)
     description = fields.Text()

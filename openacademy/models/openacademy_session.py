@@ -1,10 +1,10 @@
-from odoo import models, fields, api
+from odoo import models, fields, api, _
 from odoo.exceptions import ValidationError
 
 
 class Session(models.Model):
     _name = "openacademy.session"
-    _description = "This is the description of Session model."
+    _description = "Session"
 
     name = fields.Char()
     start_date = fields.Date(default=fields.Date.context_today)
@@ -45,15 +45,15 @@ class Session(models.Model):
         if self.number_seats < 0:
             return {
                 "warning": {
-                    "title": "Error in the number of seats.",
-                    "message": "The number of seats cannot be negative.",
+                    "title": _("Error in the number of seats."),
+                    "message": _("The number of seats cannot be negative."),
                 }
             }
         if self.taken_seats > self.number_seats:
             return {
                 "warning": {
-                    "title": "Error in the seating configuration.",
-                    "message": "The number of participants cannot be greater than the number of seats.",
+                    "title": _("Error in the seating configuration."),
+                    "message": _("The number of participants cannot be greater than the number of seats."),
                 }
             }
 
@@ -61,4 +61,4 @@ class Session(models.Model):
     def _check_instructor(self):
         for session in self:
             if session.instructor_id in session.attendee_ids:
-                raise ValidationError("The instructor cannot be attendee.")
+                raise ValidationError(_("The instructor cannot be attendee."))
